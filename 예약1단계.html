@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+  <title>예약1단계</title>
+  <link rel="stylesheet" href="./static/css/res-reset.css">
+  <link rel="stylesheet" href="./static/css/res-ui.css">
+</head>
+<body>
+  <a href="#main" class="skip">본문 바로가기</a>
+
+  <div class="root-wrapper">
+    
+    <header class="header">
+      <div class="inner-layout">
+        <h1>
+          <a href="http://korean.visitseoul.net/walking-tour" title="서울도보관광 메인(새창)" target="_blank"><img src="/static/images/logo.png" class="img-full" alt="visitseoul.net"></a>
+        </h1>
+        <div class="top-right">
+          <a href="#" class="btn-check-cancel">예약확인 및 취소</a>
+          <div class="lang-element">
+            <button type="button" class="btn_lang" title="사이트 언어 선택 메뉴 열기"><span class="lang-text">한국어</span></button>
+            <ul class="lang-open-lst">
+              <li><a href="https://korean.visitseoul.net">한국어</a></li>
+              <li><a href="https://english.visitseoul.net">English</a></li>
+              <li><a href="https://japanese.visitseoul.net">日本語</a></li>
+              <li><a href="https://chinese.visitseoul.net">简体中文</a></li>
+              <li><a href="https://tchinese.visitseoul.net">繁體中文</a></li>
+              <li><a href="https://russian.visitseoul.net">русскийязык&nbsp;<span>beta</span></a></li>
+              <li><a href="https://malay.visitseoul.net">Malay&nbsp;<span>beta</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="top-visual">
+        <div class="inner-layout">
+          <img src="./static/images/img_kv.jpg" class="img-full" alt="">
+          <div class="text-wrap">
+            <p>문화관광해설사와 함께하는<span>서울도보해설관광</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="res-contents res-step-1">
+        <div class="left-content">
+          <div class="top-tit">
+            <h2>1. 인원 및 코스 선택</h2>
+          </div>
+          <div class="left-inner">
+            <div class="top-wrap">
+              <div class="top-wrap-inner">
+                <div class="select-wrap">
+                  <label for="tourNum">관람인원</label>
+                  <div class="inner">
+                    <select id="tourNum" name="">
+                      <option value="">0 명</option>
+                      <option value="옵션 1">1 명</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="button" class="res-cta cta-skyblue"><span>선택</span></button>
+              </div>
+            </div>
+            <div class="res-scroll list-scroll-wrap">
+              <div class="item-list">
+                <button type="button" class="btn-left-item" title="용산 한강대로 이야기길"><span aria-hidden="true">용산 한강대로 이야기길</span></button>
+                <button type="button" class="btn-left-item" title="[야간]덕수궁"><span aria-hidden="true">[야간]덕수궁</span></button>
+                <button type="button" class="btn-left-item" title="[야간] 광화문 광장"><span aria-hidden="true">[야간] 광화문 광장</span></button>
+                <button type="button" class="btn-left-item" title="[야간] 정동"><span aria-hidden="true">[야간] 정동</span></button>
+                <button type="button" class="btn-left-item" title="[야간] 낙산성곽"><span aria-hidden="true">[야간] 낙산성곽</span></button>
+                <button type="button" class="btn-left-item" title="[야간] [서울로7017] 서울로 야행"><span aria-hidden="true">[야간] [서울로7017] 서울로 야행</span></button>
+                <button type="button" class="btn-left-item" title="[야간] 창경궁"><span aria-hidden="true">[야간] 창경궁</span></button>
+                <button type="button" class="btn-left-item" title="[야간] 청계천"><span aria-hidden="true">[야간] 청계천</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 낙산성곽"><span aria-hidden="true">[가족코스] 낙산성곽</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 창경궁"><span aria-hidden="true">[가족코스] 창경궁</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 창덕궁"><span aria-hidden="true">[가족코스] 창덕궁</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 인사동"><span aria-hidden="true">[가족코스] 인사동</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 덕수궁"><span aria-hidden="true">[가족코스] 덕수궁</span></button>
+                <button type="button" class="btn-left-item" title="[가족코스] 경복궁"><span aria-hidden="true">[가족코스] 경복궁</span></button>
+                <button type="button" class="btn-left-item" title="율곡로 궁궐담장길"><span aria-hidden="true">율곡로 궁궐담장길</span></button>
+                <button type="button" class="btn-left-item" title="경복궁 돌담길과 청와대"><span aria-hidden="true">경복궁 돌담길과 청와대</span></button>
+                <button type="button" class="btn-left-item" title="광화문광장"><span aria-hidden="true">광화문광장</span></button>
+                <button type="button" class="btn-left-item" title="서울시청사 ‘통통투어’"><span aria-hidden="true">서울시청사 ‘통통투어’</span></button>
+                <button type="button" class="btn-left-item" title="경복궁"><span aria-hidden="true">경복궁</span></button>
+                <button type="button" class="btn-left-item" title="북촌 한옥마을"><span aria-hidden="true">북촌 한옥마을</span></button>
+                <button type="button" class="btn-left-item" title="덕수궁"><span aria-hidden="true">덕수궁</span></button>
+                <button type="button" class="btn-left-item" title="창덕궁"><span aria-hidden="true">창덕궁</span></button>
+                <button type="button" class="btn-left-item" title="창경궁"><span aria-hidden="true">창경궁</span></button>
+                <button type="button" class="btn-left-item" title="낙산성곽"><span aria-hidden="true">낙산성곽</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="top-tit">
+            <h2>2. 날짜 및 시간선택</h2>
+            <div class="status-box">
+              <span class="status-possible">예약가능</span>
+              <span class="status-wait">예약대기</span>
+              <span class="status-complete">예약마감</span>
+            </div>
+          </div>
+          <div id="calendar" aria-label="월별 달력">
+            <div class="calendar-head" role="heading">
+              <span id="currentMonthYear">2023</span>년&nbsp;
+              <span id="currentMonthMonth">9</span>월 &nbsp;
+              <button id="prevMonth" class="btn-month" aria-label="이전 달"><img src="./static/images/btn_cal_prev.png" class="img-full" alt=""></button>  &nbsp;
+              <button id="nextMonth" class="btn-month" aria-label="다음 달"><img src="./static/images/btn_cal_next.png" class="img-full" alt=""></button>
+            </div>
+            <div id="calendarWrap" class="calendar-wrap">
+              <div class="cell prev-day">
+                <div>
+                  <div class="res-header"><span>Sun</span> <span>27</span></div>
+                </div>
+              </div>
+              <div class="cell prev-day">
+                <div>
+                  <div class="res-header"><span>Mon</span> <span>28</span></div>
+                </div>
+              </div>
+              <div class="cell prev-day">
+                <div>
+                  <div class="res-header"><span>Tue</span> <span>29</span></div>
+                </div>
+              </div>
+              <div class="cell prev-day">
+                <div>
+                  <div class="res-header"><span>Wed</span> <span>30</span></div>
+                </div>
+              </div>
+              <div class="cell prev-day">
+                <div>
+                  <div class="res-header"><span>Thu</span> <span>31</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Fri</span> <span>1</span></div>
+                  <div class="res-list">
+                    <button type="button" class="wait">14:00</button>
+                    <button type="button" class="possible">14:00</button>
+                    <span class="complete">14:00</span>
+                    <span class="complete">14:00</span>
+                    <button type="button" class="wait">14:00</button>
+                    <button type="button" class="possible">14:00</button>
+                    <span class="complete">14:00</span>
+                    <span class="complete">14:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sat</span> <span>2</span></div>
+                  <div class="res-list max-8"><!-- 8개 이상일 경우 7개만 출력 후 class 추가 :: max-8 -->
+                    <span class="wait">14:00</span>
+                    <button type="button" class="possible">14:00</button>
+                    <button type="button" class="complete">14:00</button>
+                    <span class="wait">14:00</span>
+                    <button type="button" class="possible">14:00</button>
+                    <button type="button" class="complete">14:00</button>
+                    <span class="wait">14:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sun</span> <span>3</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Mon</span> <span>4</span></div>
+                  <div class="res-list">
+                    <span class="wait">14:00</span>
+                    <span class="possible">14:00</span>
+                    <span class="complete">14:00</span>
+                    <span class="wait">14:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Tue</span> <span>5</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Wed</span> <span>6</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Thu</span> <span>7</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Fri</span> <span>8</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sat</span> <span>9</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sun</span> <span>10</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Mon</span> <span>11</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Tue</span> <span>12</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Wed</span> <span>13</span></div>
+                  <div class="closed-days"><span>휴관일</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Thu</span> <span>14</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Fri</span> <span>15</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sat</span> <span>16</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sun</span> <span>17</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Mon</span> <span>18</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Tue</span> <span>19</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Wed</span> <span>20</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Thu</span> <span>21</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Fri</span> <span>22</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sat</span> <span>23</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sun</span> <span>24</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Mon</span> <span>25</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Tue</span> <span>26</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Wed</span> <span>27</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Thu</span> <span>28</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Fri</span> <span>28</span></div>
+                </div>
+              </div>
+              <div class="cell">
+                <div>
+                  <div class="res-header"><span>Sat</span> <span>30</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="inner-layout">
+        <div class="flex justify-between menu-wrap">
+          <ul class="foot-menu">
+            <li>
+              <a href="http://sto.or.kr/privacy" target="_blank" title="개인정보처리방침새창열림">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="공지사항">공지사항</a>
+            </li>
+          </ul>
+
+          <ul class="share-menu">
+            <li>
+              <a href="https://www.facebook.com/VisitSeoul/" target="_blank" title="Visit Seoul 페이스북 새창에서 열기">
+                <img src="./static/images/ico_facebook.png" class="img-full" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/visitseoul_official/?hl=ko" target="_blank" title="Visit Seoul 인스타그램 새창에서 열기">
+                <img src="./static/images/ico_insta.png" class="img-full" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/visitseoul" target="_blank" title="Visit Seoul 유튜브 새창에서 열기">
+                <img src="./static/images/ico_youtube.png" class="img-full" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>03190, 서울특별시 종로구 청계천로85 (31빌딩) 6층. 일반 관광 문의 1330</p>
+      </div>
+      <div class="copy">© 2023 Seoul Tourism Organization. All rights reserved</div>
+    </footer>
+  </div>
+
+  <!-- popup -->
+  <div id="popupWrap" class="popup-wrap">
+    <div id="innerPopup" class="inner-popup">
+      <div class="tit">확인하기</div>
+      <div class="sub-tit">선택한 코스 및 날쨔</div>
+      <div class="cancel-name">[야간] 청계천</div>
+
+      <div class="table-wrap">
+        <dl>
+          <dt>시간</dt>
+          <dd>18:00</dd>
+        </dl>
+        <dl>
+          <dt>예약인원</dt>
+          <dd class="right">5명</dd>
+        </dl>
+        <dl>
+          <dt>예약상태</dt>
+          <dd>출발확정</dd>
+        </dl>
+      </div>
+
+      <div class="button-wrap">
+        <button type="button" id="btnPopupClose" class="res-cta cta-gray sm"><span>닫기</span></button>
+        <button type="button" id="btnResStart" class="res-cta cta-skyblue sm"><span>예약 진행</span></button>
+      </div>
+    </div>
+  </div>
+  <!-- //popup -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./static/js/common.js"></script>
+
+
+  <script>
+    // 팝업 열기
+    $('.res-list').on('click', '.wait, .possible', function() {
+      RU.popupWrapOpen();
+    });
+    // 팝업 닫기
+    $('#btnPopupClose').click(function() {
+      RU.popupWrapClose();
+    });
+    // 예약 진행
+    $('#btnResStart').click(function() {
+      RU.popupWrapClose(resStart);
+    });
+
+    // 콜백 예시
+    function resStart() {
+      console.log('예약 진행');
+    }
+  </script>
+</body>
+</html>
