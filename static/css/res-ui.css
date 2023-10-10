@@ -2422,6 +2422,9 @@ select option {
   .res-step-2 .res-info .input-wrap .type-1 input {
     width: 30.0000vw;
   }
+  .res-step-2 .tit-box h2 {
+    font-size: 4.1667vw;
+  }
   .res-step-2 .tit-box h3 {
     margin-top: 2.7778vw;
     font-size: 2.5000vw;
