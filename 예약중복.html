@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="x-ua-compatible">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
-  <title>예약완료</title>
+  <title>예약중복</title>
   <link rel="stylesheet" href="./static/css/res-reset.css">
   <link rel="stylesheet" href="./static/css/res-ui.css">
 </head>
@@ -38,75 +38,53 @@
 
     <main id="main">
       <section class="top-visual">
-          <div class="inner-layout">
-            <div class="text-wrap">
-              <p>문화관광해설사와 함께하는<span>서울도보해설관광</span></p>
-            </div>
+        <div class="inner-layout">
+          <div class="text-wrap">
+            <p>문화관광해설사와 함께하는<span>서울도보해설관광</span></p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="res-contents res-complete type-view center">
-          <h2 class="sub-tit">예약완료</h2>
-          <p class="sub-desc">다음과 같이 예약이 완료되었습니다.</p>
+      <section class="res-contents res-confirm type-view center">
+        <h2 class="sub-tit">예약중복</h2>
+        <p class="sub-desc">다음의 사유로 인하여 예약이 정상적으로 진행되지 못하였습니다.</p>
 
-
-          <div class="res-info-wrap">
-            <dl>
-              <dt>예약구분</dt>
-              <dd>개인</dd>
-            </dl>
-            <div class="col2">
-              <dl>
-                <dt>예약번호</dt>
-                <dd>2233020234</dd>
-              </dl>
-              <dl>
-                <dt>예약상태</dt>
-                <dd><div class="res-status confirmed">예약확정</div></dd>
-                <!-- <dd><div class="res-status wait">예약대기</div></dd> -->
-                <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
-              </dl>
-            </div>
-            <dl>
-              <dt>코스명</dt>
-              <dd>[야간] 광화문 광장</dd>
-            </dl>
-            <dl>
-              <dt>해설언어</dt>
-              <dd>한국어</dd>
-            </dl>
-            <dl>
-              <dt>행사일시</dt>
-              <dd>2023년11월05월 (일) 14시 00분</dd>
-            </dl>
-            <dl>
-              <dt>관람인원</dt>
-              <dd>총 6명</dd>
-            </dl>
+        <div class="form-wrap">
+          <div class="error-type-txt">
+            중복예약 [선택한 날짜] 에 다른 예약이 존재합니다.<br>
+            다른 날짜를 선택 후 예약해 주세요
           </div>
-          <a href="javascript:void(0)" class="res-cta lg cta-skyblue"><span>예약 상세 내역 보기</span></a>
+        </div>
 
-          <div class="guide-box">
-            <h3>예약상태 안내</h3>
-            <div class="list-inner">
-              <div class="flex align-items">
-                <div class="res-status confirmed">예약확정</div>
-                <div>최소 출발인원이 충족되어 행사가 확정 된 상태</div>
-              </div>
-              <div class="flex align-items">
-                <div class="res-status wait">예약대기</div>
-                <div>최소 출발인원 / 담당 해설사 미미정에 따른 담당자 확인 후 예약 확정 여부 확인 가능 상태</div>
-              </div>
-              <div class="flex align-items">
-                <div class="res-status cancel">예약취소</div>
-                <div>고객 요청 또는 행사 미진행에 따른 예약이 취소된 상태</div>
+        <a href="javascript:void(0)" class="res-cta lg cta-skyblue"><span>홈으로</span></a>
+
+        <div class="guide-box">
+          <h3>예약상태 안내</h3>
+          <div class="list-inner">
+            <div class="flex align-items">
+              <div class="res-status confirmed">예약확정</div>
+              <div>예약인원 3인 이상으로 관광이 확정된 상태</div>
+            </div>
+            <div class="flex">
+              <div class="res-status wait">예약대기</div>
+              <div>
+                <ul>
+                  <li>관광이 확정되지 않은 상태로 상황에 따라 취소 될 수 있음</li>
+                  <li>(개인예약) 예약인원  3인 미만으로 관광이 확정되지 않은 상태</li>
+                  <li>※ 관광일 기준 2일 전 17시까지 3인 모집 미달 시 자동취소</li>
+                  <li>(단체예약) 관리자가 예약 가능여부 확인, 해설사 모집 중인 상태</li>
+                </ul>
               </div>
             </div>
+            <div class="flex align-items">
+              <div class="res-status cancel">예약취소</div>
+              <div>예약이 취소된 상태</div>
+            </div>
           </div>
-
-        </section>
+        </div>
+      </section>
     </main>
-  
+
     <footer class="footer">
       <div class="inner-layout">
         <div class="flex justify-between menu-wrap">

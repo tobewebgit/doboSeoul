@@ -11,7 +11,7 @@
 <body>
   <a href="#main" class="skip">본문 바로가기</a>
 
-  <div class="root-wrapper">
+  <div class="root-wrapper personal"><!-- 1208::개인 페이지 클래스 personal 추가 -->
     
     <header class="header">
       <div class="inner-layout">
@@ -47,13 +47,12 @@
 
       <div class="top-button-wrap">
         <div class="button-box">
-          <button type="button" class="btn-res-h">개인 예약 <span>(1~10인)</span></button>
-          <button type="button" class="btn-res-o" class="">단체 예약 <span>(10인 이상)</span></button>
+          <button type="button" class="btn-res-h">개인 예약</button>
+          <button type="button" class="btn-res-o" class="">단체 예약</button>
         </div>
         <div class="text-wrap">
-          <p class="res-o">단체 예약은 최소 10인 이상 부터 예약 가능합니다.</p>
-          <p class="res-h">개인은 최대 10인까지 예약 가능합니다.</p>
-          <p class="res-h">최소 행사 인원 3명이 모집된 경우 예약가능으로 표시되며<br>3명 이하인 경우에는 예약대기로 표시가 됩니다.</p>
+          <p>경복궁, 창경궁, 창덕궁은 20인미만, 그 외 코스는 최대 10인 미만 시 개인예약에 해당됩니다.</p>
+          <p>예약인원이 최소 3명 이상일 경우 관광이 진행됩니다.<br>관광일 2일전 17시까지 예약인원이 3명 미만인 경우 자동취소 됩니다.</p>
         </div>
       </div>
       
@@ -80,12 +79,13 @@
               </div>
               <div class="res-scroll list-scroll-wrap">
                 <div class="item-list">
+                  <!-- 1208::선택 버튼 class "active" -->
                   <button type="button" class="btn-left-item" title="용산 한강대로 이야기길"><span aria-hidden="true">용산 한강대로 이야기길</span></button>
                   <button type="button" class="btn-left-item" title="[야간]덕수궁"><span aria-hidden="true">[야간]덕수궁</span></button>
                   <button type="button" class="btn-left-item" title="[야간] 광화문 광장"><span aria-hidden="true">[야간] 광화문 광장</span></button>
                   <button type="button" class="btn-left-item" title="[야간] 정동"><span aria-hidden="true">[야간] 정동</span></button>
                   <button type="button" class="btn-left-item" title="[야간] 낙산성곽"><span aria-hidden="true">[야간] 낙산성곽</span></button>
-                  <button type="button" class="btn-left-item" title="[야간] [서울로7017] 서울로 야행"><span aria-hidden="true">[야간] [서울로7017] 서울로 야행</span></button>
+                  <button type="button" class="btn-left-item active" title="[야간] [서울로7017] 서울로 야행"><span aria-hidden="true">[야간] [서울로7017] 서울로 야행</span></button>
                   <button type="button" class="btn-left-item" title="[야간] 창경궁"><span aria-hidden="true">[야간] 창경궁</span></button>
                   <button type="button" class="btn-left-item" title="[야간] 청계천"><span aria-hidden="true">[야간] 청계천</span></button>
                   <button type="button" class="btn-left-item" title="[가족코스] 낙산성곽"><span aria-hidden="true">[가족코스] 낙산성곽</span></button>
@@ -112,21 +112,27 @@
             <div class="top-tit">
               <h2>2. 날짜 및 시간선택</h2>
               <div class="status-box">
-                <span class="status-possible">예약가능</span>
-                <span class="status-wait">예약대기</span>
-                <span class="status-complete">예약마감</span>
+                <div class="status-possible">예약가능<span>(예약인원 3명 이상)</span></div>
+                <div class="status-wait">예약대기<span>(예약인원 3명 미만)</span></div>
+                <div class="status-complete">예약마감</div>
               </div>
             </div>
             <div id="calendar" aria-label="월별 달력">
               <div class="calendar-head" role="heading">
                 <span id="currentMonthYear">2023</span>년&nbsp;
                 <span id="currentMonthMonth">9</span>월 &nbsp;
+
+                <!-- 1208::a 일 경우 "disabled" class 추가, button 일 경우 disabled 속성 추가 -->
                 <button id="prevMonth" class="btn-month" aria-label="이전 달"><img src="./static/images/btn_cal_prev.png" class="img-full" alt=""></button>  &nbsp;
-                <button id="nextMonth" class="btn-month" aria-label="다음 달"><img src="./static/images/btn_cal_next.png" class="img-full" alt=""></button>
+                <button id="nextMonth" disabled class="btn-month" aria-label="다음 달"><img src="./static/images/btn_cal_next.png" class="img-full" alt=""></button>
               </div>
+
               <div id="calendarWrap" class="calendar-wrap">
+                <!-- 1208::이전달(prev-day), 다음달(next-day) 일경우 class 추가 color 변경 됨 -->
+                <!-- 1208::토요일(set), 일요일(sun) class 추가 -->
+
                 <div class="cell prev-day">
-                  <div>
+                  <div class="sun">
                     <div class="res-header"><span>일</span> <div><span class="res-mo">9/</span><span>27</span></div></div>
                   </div>
                 </div>
@@ -166,7 +172,7 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sat">
                     <div class="res-header"><span>토</span> <div><span class="res-mo">9/</span><span>2</span></div></div>
                     <div class="res-list max-8"><!-- 8개 이상일 경우 7개만 출력 후 class 추가 :: max-8(모바일 감춤) -->
                       <span class="wait">14:00</span>
@@ -180,7 +186,7 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sun">
                     <div class="res-header"><span>일</span> <div><span class="res-mo">9/</span><span>3</span></div></div>
                   </div>
                 </div>
@@ -216,12 +222,12 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sat">
                     <div class="res-header"><span>토</span> <div><span class="res-mo">9/</span><span>9</span></div></div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sun">
                     <div class="res-header"><span>일</span> <div><span class="res-mo">9/</span><span>10</span></div></div>
                   </div>
                 </div>
@@ -252,12 +258,12 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sat">
                     <div class="res-header"><span>토</span> <div><span class="res-mo">9/</span><span>16</span></div></div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sun">
                     <div class="res-header"><span>일</span> <div><span class="res-mo">9/</span><span>17</span></div></div>
                   </div>
                 </div>
@@ -287,12 +293,12 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sat">
                     <div class="res-header"><span>토</span> <div><span class="res-mo">9/</span><span>23</span></div></div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sun">
                     <div class="res-header"><span>일</span> <div><span class="res-mo">9/</span><span>24</span></div></div>
                   </div>
                 </div>
@@ -322,7 +328,7 @@
                   </div>
                 </div>
                 <div class="cell">
-                  <div>
+                  <div class="sat">
                     <div class="res-header"><span>토</span> <div><span class="res-mo">9/</span><span>30</span></div></div>
                   </div>
                 </div>
@@ -376,6 +382,10 @@
       <div class="cancel-name">[야간] 청계천</div>
 
       <div class="table-wrap">
+        <dl>
+          <dt>날짜</dt>
+          <dd>2023년 12월 8일</dd>
+        </dl>
         <dl>
           <dt>시간</dt>
           <dd>18:00</dd>

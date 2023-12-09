@@ -36,7 +36,7 @@ textarea { resize: none;}
 html { font-size: 10px;}
 body { overflow-x:hidden; color: #191919; font-size: 1rem;}
 body.hidden { position: fixed; overflow-y:hidden; touch-action: none;}
-main { font-size: 1.4rem; line-height:2.1rem; color:#191919; display: block;}
+main { font-size: 1.4rem;color:#191919; display: block;}
 a, button { color:#111; font-family: 'Noto Sans KR', sans-serif; background: none;}
 p, li{word-break: keep-all;}
 

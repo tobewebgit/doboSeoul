@@ -51,22 +51,27 @@
 
 
           <div class="res-info-wrap">
-            <dl>
-              <dt>예약구분</dt>
-              <dd>개인</dd>
-            </dl>
             <div class="col2">
+              <dl>
+                <dt>예약구분</dt>
+                <dd>개인</dd>
+              </dl>
               <dl>
                 <dt>예약번호</dt>
                 <dd>2233020234</dd>
               </dl>
-              <dl>
-                <dt>예약상태</dt>
-                <dd><div class="res-status confirmed">예약확정</div></dd>
-                <!-- <dd><div class="res-status wait">예약대기</div></dd> -->
-                <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
-              </dl>
             </div>
+            <dl>
+              <dt>예약상태</dt>
+              <!-- <dd><div class="res-status confirmed">예약확정</div></dd> -->
+              <dd class="res-status-wrap">
+                <span class="res-status red">예약대기</span>
+                <span class="res-status-txt">
+                  관광일 2일전 17시 까지 3인 미만 모집 시 취소될 수 있습니다.
+                </span>
+              </dd>
+              <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
+            </dl>
             <dl>
               <dt>코스명</dt>
               <dd>[야간] 광화문 광장</dd>
@@ -161,6 +166,16 @@
               </dd>
 
               <dt>담당 해설사</dt>
+              <dd class="guide-wrap">
+                <div class="bg-box w-full">
+                  예약대기중입니다.
+                </div>
+              </dd>
+              <dd class="guide-wrap">
+                <div class="bg-box w-full">
+                  해설사 배정 중 입니다.
+                </div>
+              </dd>
               <dd class="res-manager h-auto flex">
                 <div class="bg-box">
                   <dl>
@@ -177,7 +192,7 @@
                   </dl>
                 </div>
                 <div class="desc-box image-type">
-                  <img src="./static/images/img_kv.jpg" alt=""/>
+                  <img src="./static/images/guide_card_photo.png" alt=""/>
                 </div>
               </dd>
 
@@ -187,16 +202,14 @@
 
               <dt>만남의 장소</dt>
               <dd class="guide-wrap">
-                <div class="bg-box w-full">
-                  <p>덕수궁 매표소 앞</p>
-                  <p>교통편 안내 : 1호선 시청역 2번 출구, 2호선 시청역 12번 출구.</p>
-                </div>
-              </dd>
-
-              <dt>사진 및 지도</dt>
-              <dd class="guide-wrap">
-                <div class="bg-box w-full">
-                  사진 및 지도
+                <div class="flex justify-between bg-box w-full">
+                  <div class="guide-info">
+                    <p>덕수궁 매표소 앞</p>
+                    <p>교통편 안내 : 1호선 시청역 2번 출구, 2호선 시청역 12번 출구.</p>
+                  </div>
+                  <div class="guide-image">
+                    <img src="./static/images/meeting_place_2.jpg" alt=""/>
+                  </div>
                 </div>
               </dd>
 
@@ -206,47 +219,48 @@
                   <table>
                     <caption>예약 후 안내사항</caption>
                     <colgroup>
-                        <col style="width: 25%;">
+                        <col style="width: 20%;">
                         <col class="">
                     </colgroup>
                     <tbody>
                       <tr>
                         <th scope="row">예약 확인 방법</th>
-                        <td><span>[서울도보해설관광 홈페이지 내 예약확인 및 취소]</span>에서 예약 확인 및 취소 가능합니다.</td>
+                        <td><span>[서울도보해설관광 홈페이지 내 예약확인 및 취소]</span>에서 확인 및 취소 가능합니다.</td>
                       </tr>
                       <tr>
-                        <th scope="row">출발요건</th>
+                        <th scope="row">취소조건</th>
                         <td>
-                          개인예약은 1인부터 가능하나 선택한 일자 / 시간에 최종예약인원이 3인 미만인 경우 행사는 진행되지 않습니다.<br>
-                          (행사 조건을 충족하지 못할 경우 다른 팀과 함께 행사가 진행될 수 있습니다.)
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">취소조건<br>(투어 확정 이후)</th>
-                        <td>
-                          <span>[기후]</span> <br>
-                          · 기상특보(<span>폭염, 태풍, 호우, 미세먼지</span> 등)로 인해 도보관광 운영이 어려운 경우 모든 예약은 일괄 취소됩니다. <br>
-                          · 예) 금요일 17시 기준 폭염주의보 발생 상황에서, 주말 최고기온이 30도 이상으로 예상(기상청 예보 기준)될 경우 주말 예약 전체가 취소 됩니다. (예약 당일 기상특보를 상시 확인 바랍니다.) <br>
+                          <span>[예약인원 3인 미만]</span> <br>
+                          · 관광일 2일 전 17시까지 누적 <span>예약인원이 3인 미만일 경우 해당 예약은 자동취소 됩니다.</span> (예약확정, 예약취소 여부 문자 통보) 
+                          <br>
+                          <br>
+                          <span>[기상특보 발효]</span> <br>
+                          · <span>기상특보</span>(폭염주의보, 폭염경보, 한파경보, 호우주의보, 호우경보, 대설주의보, 대설특보, 미세먼지 비상저감조치 등)발효 시 <span>모든 예약은 일괄 취소</span>됩니다. (취소 후 문자 통보)
+                          <br>
+                          · 예약 당일 기상특보를 상시 확인 바랍니다. 기상청 또는 서울시 기상특보(https://news.seoul.go.kr/safe/whather_express)
+                          <br>
+                          · 금요일 17시 기준 특보 발효 상태 시 주말 예약(토,일)은 전체 취소됩니다.
+                          <br>
+                          · 그 밖에 재난 발생 및 안전상황에 따라 예약이 취소될 수 있습니다.
+                          <br>
                           <br>
                           <span>[관광객]</span> <br>
-                          · 예약 24시간 전 취소방법: <span>서울도보해설관광 홈페이지 내 예약확인 및 취소](데스크톱,모바일)</span> 에서 예약 취소 가능 <br>
-                          예약 당일 취소방법: 행사시작 최소 4시간 전, 02-6925-0777 또는 배정된 해설사를 통해 예약취소를 할 수 있습니다. <br>
-                          · 예약 시간에서 [20분 이상] 늦게 도착한 경우 자동으로 예약은 취소 됩니다. <br>
-                          (행사시간 4시간 미만 내 취소, 지연 도착 및 노쇼등 2회 이상 발생 시 향후 예약이 제한 될 수 있습니다.) <br>
-                          <br>
-                          <span>[기타]</span> <br>
-                          · 희망하는 날짜 및 코스에 화동 가능한 해설사가 없는 경우, 예약이 취소 될 수 있습니다.
+                          · 예약시간 24시간 전: 서울도보해설관광 홈페이지 내 예약확인 및 취소 에서 가능<br>
+                          · 당일 취소: 관광시작 시간 최소 4시간 전 02-6925-0777 또는 배정된 해설사를 통해 예약 취소 가능<br>
+                          · <span>예약시간 [20분 이상] 늦게 도착한 경우 자동으로 예약은 취소됩니다.</span> (당일취소, 노쇼 등 00회 이상 발생 시 향후 예약이 제한 될 수 있습니다.)
                         </td>
                       </tr>
                       <tr>
                         <th scope="row">문자알림</th>
-                        <td>· “투어 확정” 또는 “예약 취소”의 경우 예악자 정보의 휴대폰 번호를 통해 문자로 안내해드리고 있습니다.</td>
+                        <td>“예약 확정” 또는 “예약 취소”의 경우 예악자 정보의 휴대폰 번호를 통해 문자로 안내해드리고 있습니다.</td>
                       </tr>
                       <tr>
                         <th scope="row">주의사항</th>
                         <td>
-                          · 해설사와 개인적으로 코스 및 일시를 변경하는 행위는 삼가하여 주십시오. <br>
-                          · 개인 SNS 등에 해설사님의 신상 및 신상정보 (실명, 전화번호, 얼굴사진 등) 기재를 삼가하여 주시기 바랍니다.
+                          · 해설 진행 중 발생하는 안전사고에 대해서는 책임지지 않습니다.<br>
+                          · 해설사와 개인적으로 코스 및 일시를 변경하는 것은 불가합니다.<br>
+                          · 해설 내용 촬영 및 녹취, 해설사 동의없는 사진 촬영은 불가합니다.<br>
+                          · SNS에 해설사 사진 업로드 및 실명공개를 삼가하여 주시기 바랍니다.
                         </td>
                       </tr>
                     </tbody>
@@ -267,15 +281,22 @@
             <div class="list-inner">
               <div class="flex align-items">
                 <div class="res-status confirmed">예약확정</div>
-                <div>최소 출발인원이 충족되어 행사가 확정 된 상태</div>
+                <div>예약인원 3인 이상으로 관광이 확정된 상태</div>
               </div>
-              <div class="flex align-items">
+              <div class="flex">
                 <div class="res-status wait">예약대기</div>
-                <div>최소 출발인원 / 담당 해설사 미미정에 따른 담당자 확인 후 예약 확정 여부 확인 가능 상태</div>
+                <div>
+                  <ul>
+                    <li>관광이 확정되지 않은 상태로 상황에 따라 취소 될 수 있음</li>
+                    <li>(개인예약) 예약인원  3인 미만으로 관광이 확정되지 않은 상태</li>
+                    <li>※ 관광일 기준 2일 전 17시까지 3인 모집 미달 시 자동취소</li>
+                    <li>(단체예약) 관리자가 예약 가능여부 확인, 해설사 모집 중인 상태</li>
+                  </ul>
+                </div>
               </div>
               <div class="flex align-items">
                 <div class="res-status cancel">예약취소</div>
-                <div>고객 요청 또는 행사 미진행에 따른 예약이 취소된 상태</div>
+                <div>예약이 취소된 상태</div>
               </div>
             </div>
           </div>

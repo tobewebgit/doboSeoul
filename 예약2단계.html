@@ -45,14 +45,13 @@
         </div>
       </section>
 
-      <div class="top-button-wrap">
+      <div class="top-button-wrap res-org">
         <div class="button-box">
-          <button type="button" class="btn-res-h">개인 예약 <span>(1~10인)</span></button>
-          <button type="button" class="btn-res-o">단체 예약 <span>(10인 이상)</span></button>
+          <button type="button" class="btn-res-h">개인 예약</button>
+          <button type="button" class="btn-res-o">단체 예약</button>
         </div>
         <div class="text-wrap">
-          <p class="res-o">단체 예약은 최소 10인 이상 부터 예약 가능합니다.</p>
-          <p class="res-h">개인은 최대 10인까지 예약 가능합니다.</p>
+          <p>경복궁, 창경궁, 창덕궁은 20인미만, 그 외 코스는 최대 10인 미만 시 개인예약에 해당됩니다.</p>
         </div>
       </div>
 
@@ -72,7 +71,7 @@
                         <div class="item-box">
                           <dl class="text-type">
                             <dt class="ess">예약일시</dt>
-                            <dd>2023.8.16(수) 19:00 (2회차)</dd>
+                            <dd>2023.8.16(수) 19:00</dd>
                           </dl>
                         </div>
                         <div class="item-box">
@@ -266,50 +265,17 @@
               </div>
 
               <div class="tit-box">
-                <h3>개인정보 수집 및 이용 동의 <span class="ess-txt">(필수)</span></h3>
+                <h3>개인정보 수집 동의 <span class="ess-txt">(필수)</span></h3>
               </div>
-              <div class="guide-box">
-                <div class="txt-inner">
-                  <div class="bg-box">
-                    <div class="res-scroll">
-                      
-                      ※ 개인정보 수집 및 이용 목적 <br>
-                      - 도보해설관광 예약 서비스 제공 기초자료 활용 <br>
-                      - 도보해설관광 예약 서비스 진행 시 본인 확인 절차용 <br>
-                      <br>
-                      ※ 수집 및 이용 항목 <br>
-                      - 필수 항목 <br>
-                      (예약자 정보) 이름, 휴대폰번호, 이메일,  <br>
-                      (추가 정보) 단체명, 대표자명 <br>
-                      - 선택 항목 <br>
-                      (예약자 정보) 전화번호 <br>
-                      <br>
-                      ※ 개인정보의 보유 및 이용기간 <br>
-                      개인정보 수집 및 이용 목적이 달성된 후, 해당 정보는 다음의 보유기간 이후 지체 없이 파기합니다. <br>
-                      - 보유기간 : 도보해설관광 종료 후 30일 이내 <br>
-                      <br>
-                      ※ 동의 거부 권리 및 불이익 내용 <br>
-                      - 위 개인정보 중 필수 항목에 대한 수집 이용에 관한 동의는 기본 서비스 제공을 위하여 필수 수집 항목으로 위 사항에 동의하셔야만 관련 서비스 이용이 가능합니다. <br>
-                      - 위 개인정보 중 선택 항목에 대한 수집 이용에 관한 동의는 개인정보보호법 제15조에 의거, 거부하실 수 있으나, 동의하지 않을 시 부가서비스 이용 등에 불이익을 받으실 수  <br>있습니다.
-                    </div>
-                  </div>
+              <div class="guide-box privacy">
+                <div class="check-wrap">
+                  <input type="checkbox" name="" id="resGuideAgree">
+                  <label for="resGuideAgree">
+                    도보관광 예약 및 이용을 위한 개인정보 수집에 동의합니다.
+                  </label>
                 </div>
-                <div class="privacy-wrap">
-                  <div class="radio-wrap flex align-items">
-                    <div class="tit ess">개인정보 수집 및 이용에 대해 동의</div>
-                    <input type="radio" name="test1" value="" id="privacyAgree1">
-                    <label for="privacyAgree1">동의함</label>
-                    <input type="radio" name="test1" value="" id="privacyAgree2">
-                    <label for="privacyAgree2"> 동의하지 않음</label>
-                  </div>
-                  <div class="radio-wrap flex align-items">
-                    <div class="tit">개인정보 수집 및 이용에 대해 동의</div>
-                    <input type="radio" name="test2" value="" id="privacyAgree3">
-                    <label for="privacyAgree3">동의함</label>
-                    <input type="radio" name="test2" value="" id="privacyAgree4">
-                    <label for="privacyAgree4"> 동의하지 않음</label>
-                  </div>
-                </div>
+
+                <a href="https://www.seoul.go.kr/helper/privacy.do?type=www" target="_blank" class="res-cta cta-gray sm"><span class="pri-txt">개인정보처리방침</span></a>
               </div>
 
               <div class="tit-box">
@@ -328,40 +294,45 @@
                       <td><span>[서울도보해설관광 홈페이지 내 예약확인 및 취소]</span>에서 예약 확인 및 취소 가능합니다.</td>
                     </tr>
                     <tr>
-                      <th scope="row">출발요건</th>
+                      <th scope="row">취소조건</th>
                       <td>
-                        개인예약은 1인부터 가능하나 선택한 일자 / 시간에 최종예약인원이 3인 미만인 경우 행사는 진행되지 않습니다.<br>
-                        (행사 조건을 충족하지 못할 경우 다른 팀과 함께 행사가 진행될 수 있습니다.)
+                        <span>[예약대기]</span> <br>
+                        · '예약대기' 는 예약확정 상태가 아닙니다. 예약하신 날짜 및 코스에 활동 가능한 해설사가 없는 경우 예약은 취소됩니다.<br>
+                        · 예약확인을 위해 서울도보해설관광(02-6925-0777)에서 확인 연락이 진행됩니다.(최소 5일~한달 전) 3회 이상 전화 통화가 이루어지지 않을 시 예약은 취소됩니다.
+                        <br>
+                        <br>
+                        <span>[기상특보 발효]</span> <br>
+                        · <span>기상특보</span>(폭염주의보, 폭염경보, 한파경보, 호우주의보, 호우경보, 대설주의보, 대설특보, 미세먼지 비상저감조치 등)발효 시 <span>모든 예약은 일괄 취소</span>됩니다. (취소 후 문자 통보)
+                        <br>
+                        · 예약 당일 기상특보를 상시 확인 바랍니다. 기상청 또는 서울시 기상특보(https://news.seoul.go.kr/safe/whather_express)
+                        <br>
+                        · 금요일 17시 기준 특보 발효 상태 시 주말 예약(토,일)은 전체 취소됩니다.
+                        <br>
+                        · 그 밖에 재난 발생 및 안전상황에 따라 예약이 취소될 수 있습니다.
+                        <br>
+                        <br>
+                        <span>[관광객]</span> <br>
+                        · 예약시간 24시간 전: 서울도보해설관광 홈페이지 내 예약확인 및 취소 에서 가능<br>
+                        · 당일 취소: 관광시작 시간 최소 4시간 전 02-6925-0777 또는 배정된 해설사를 통해 예약 취소 가능<br>
+                        · <span>예약시간 [20분 이상] 늦게 도착한 경우 자동으로 예약은 취소됩니다.</span> (당일취소, 노쇼 등 00회 이상 발생 시 향후 예약이 제한 될 수 있습니다.)
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">취소조건<br>(투어 확정 이후)</th>
-                      <td>
-                        <span>[기후]</span> <br>
-                        · 기상특보(<span>폭염, 태풍, 호우, 미세먼지</span> 등)로 인해 도보관광 운영이 어려운 경우 모든 예약은 일괄 취소됩니다. <br>
-                        · 예) 금요일 17시 기준 폭염주의보 발생 상황에서, 주말 최고기온이 30도 이상으로 예상(기상청 예보 기준)될 경우 주말 예약 전체가 취소 됩니다. (예약 당일 기상특보를 상시 확인 바랍니다.) <br>
-                        <br>
-                        <span>[관광객]</span> <br>
-                        · 예약 24시간 전 취소방법: <span>서울도보해설관광 홈페이지 내 예약확인 및 취소](데스크톱,모바일)</span> 에서 예약 취소 가능 <br>
-                        예약 당일 취소방법: 행사시작 최소 4시간 전, 02-6925-0777 또는 배정된 해설사를 통해 예약취소를 할 수 있습니다. <br>
-                        · 예약 시간에서 [20분 이상] 늦게 도착한 경우 자동으로 예약은 취소 됩니다. <br>
-                        (행사시간 4시간 미만 내 취소, 지연 도착 및 노쇼등 2회 이상 발생 시 향후 예약이 제한 될 수 있습니다.) <br>
-                        <br>
-                        <span>[기타]</span> <br>
-                        · 희망하는 날짜 및 코스에 화동 가능한 해설사가 없는 경우, 예약이 취소 될 수 있습니다.
-                      </td>
+                      <th scope="row">35인 이상 궁궐 예약 시</th>
+                      <td>· 경복궁, 창덕궁, 창경궁, 덕수궁 35인 이상 관람 시, 해당 궁궐 사이트에서 15일 전 단체 입장신청이 필요합니다.</td>
                     </tr>
                     <tr>
                       <th scope="row">문자알림</th>
-                      <td>· “투어 확정” 또는 “예약 취소”의 경우 예악자 정보의 휴대폰 번호를 통해 문자로 안내해드리고 있습니다.</td>
+                      <td>· “예약 확정” 또는 “예약 취소”의 경우 예악자 정보의 휴대폰 번호를 통해 문자로 안내해드리고 있습니다.</td>
                     </tr>
                     <tr>
                       <th scope="row">주의사항</th>
                       <td>
-                        · 해설사와 개인적으로 코스 및 일시를 변경하는 행위는 삼가하여 주십시오. <br>
-                        · 개인 SNS 등에 해설사님의 신상 및 신상정보 (실명, 전화번호, 얼굴사진 등) 기재를 삼가하여 주시기 바랍니다.
+                        · 해설 진행 중 발생하는 안전사고에 대해서는 책임지지 않습니다.<br>
+                        · 해설사와 개인적으로 코스 및 일시를 변경하는 것은 불가합니다.<br>
+                        · 해설 내용 촬영 및 녹취, 해설사 동의없는 사진 촬영은 불가합니다.<br>
+                        · SNS에 해설사 사진 업로드 및 실명공개를 삼가하여 주시기 바랍니다.
                       </td>
-                    </tr>
                   </tbody>
                 </table>
 
@@ -420,22 +391,21 @@
 
   <div id="popupWrap" class="popup-wrap">
     <div id="innerPopup" class="inner-popup">
-      <div class="tit">예약 전 안내사항</div>
+      <div class="tit">'단체' 예약 전 안내사항</div>
 
       <div class="text-wrap">
         <p>예약은 관광일 기준 최대 5개월 전부터 최소 5일 전 까지 신청 가능합니다.</p>
         <p>희망하시는 날짜 및 코스에 활동가능한 해설사가 없는 경우 예약은 취소될 수 있습니다.</p>
         <p>특히 주말 및 공휴일, 봄(4~5월) 가을(9~11월) 성수기에는 예약이 조기마감 되오니 이 점 유의하여 주시기 바랍니다.</p>
         <p>
-          예약확인을 위해 도보관광 사무국(02-6925-0777)에서 확인 연락이 진행됩니다.
-          (최소 5일~한달 전)3회 이상 전화통화가 이뤄지지 않을 시 예약이 취소될 수 있습니다.
+          예약확인을 위해 도보관광 사무국(02-6925-0777)에서 확인 연락이 진행됩니다. (최소 5일~한달 전)3회 이상 전화통화가 이뤄지지 않을 시 예약이 취소될 수 있습니다.
         </p>
         <p>경복궁, 창덕궁, 창경궁, 덕수궁 35인 이상 관람 시, 해당 궁궐 사이트에서 15일 전 단체 입장신청이 필요합니다. (2014.1.1.부터 시행)</p>
         <p>해설 진행 시 발생하는 안전사고에 대해서 도보관광 사무국과 서울문화관광해설사는 책임을 지지 않습니다.</p>
         <p>보호자가 동반하지 않는 만 14세 미만의 아동 관광객의 경우 현장에서 취소됩니다.</p>
         <p>기상특보(폭염, 태풍, 호우, 미세먼지 등)로 인해 도보관광 운영이 어려운 경우 모든 예약은 일괄 취소됩니다.(발효 즉시 취소처리)</p>
 
-        <div>※ 예약 당일 기상특보를 상시 확인 바랍니다.</div>
+        <div>※예약 당일 기상특보를 상시 확인 바랍니다.</div>
       </div>
 
       <div class="button-wrap">
