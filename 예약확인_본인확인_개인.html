@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="x-ua-compatible">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
-  <title>예약취소</title>
+  <title>예약확인_본인확인</title>
   <link rel="stylesheet" href="./static/css/res-reset.css">
   <link rel="stylesheet" href="./static/css/res-ui.css">
 </head>
@@ -45,50 +45,33 @@
           </div>
         </section>
 
-        <section class="res-contents res-complete type-view center">
-          <h2 class="sub-tit">취소완료</h2>
-          <p class="sub-desc">다음과 같이 예약이 취소 되었습니다.</p>
+        <section class="res-contents res-confirm center">
+          <h2 class="sub-tit">예약 확인 및 취소</h2>
+          <p class="sub-desc">예약 시 입력한 휴대폰 번호를 통해 예약 확인 및 취소가 가능합니다. <br>해당 휴대폰 번호를 입력 후 인증번호 요청/인증 후 확인해 주세요.</p>
 
-
-          <div class="res-info-wrap">
-            <dl>
-              <dt>예약구분</dt>
-              <dd>개인</dd>
-            </dl>
-            <div class="col2">
-              <dl>
-                <dt>예약번호</dt>
-                <dd>2233020234</dd>
-              </dl>
-              <dl>
-                <dt>예약상태</dt>
-                <!-- <dd><div class="res-status confirmed">예약확정</div></dd> -->
-                <!-- <dd><div class="res-status wait">예약대기</div></dd> -->
-                <dd><div class="res-status cancel">예약취소</div></dd>
-              </dl>
-            </div>
-            <dl>
-              <dt>코스명</dt>
-              <dd>[야간] 광화문 광장</dd>
-            </dl>
-            <dl>
-              <dt>해설언어</dt>
-              <dd>한국어</dd>
-            </dl>
-            <dl>
-              <dt>예약일시</dt>
-              <dd>2023년11월05월 (일) 14시 00분</dd>
-            </dl>
-            <dl>
-              <dt>예약인원</dt>
-              <dd>총 6명</dd>
-            </dl>
-          </div>
-          <a href="javascript:void(0)" class="res-cta lg cta-skyblue"><span>홈으로</span></a>
-
+          <form id="" name="" action="">
+            <fieldset>
+              <legend>휴대폰 번호 인증하기</legend>
+              <div class="form-wrap">
+                <div class="input-wrap">
+                  <div class="input-box type-1">
+                    <label for="phone" class="md ess space">휴대폰 번호</label>
+                    <input type="text" name="" id="phone">
+                    <button type="button" class="res-cta md cta-skyblue"><span>인증번호 요청</span></button>
+                  </div>
+                  <div class="input-box type-1">
+                    <div class="space"></div>
+                    <input type="text" name="" id="phone">
+                    <button type="button" class="res-cta md cta-skyblue" disabled><span>인증하기</span></button>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="res-cta lg cta-skyblue"><span>예약확인</span></button>
+            </fieldset>
+          </form>
         </section>
     </main>
-  
+
     <footer class="footer">
       <div class="inner-layout">
         <div class="flex justify-between menu-wrap">

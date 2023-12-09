@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="x-ua-compatible">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
-  <title>예약취소</title>
+  <title>예약완료</title>
   <link rel="stylesheet" href="./static/css/res-reset.css">
   <link rel="stylesheet" href="./static/css/res-ui.css">
 </head>
@@ -46,8 +46,8 @@
         </section>
 
         <section class="res-contents res-complete type-view center">
-          <h2 class="sub-tit">취소완료</h2>
-          <p class="sub-desc">다음과 같이 예약이 취소 되었습니다.</p>
+          <h2 class="sub-tit">예약완료</h2>
+          <p class="sub-desc">다음과 같이 예약이 완료되었습니다.</p>
 
 
           <div class="res-info-wrap">
@@ -62,9 +62,9 @@
               </dl>
               <dl>
                 <dt>예약상태</dt>
-                <!-- <dd><div class="res-status confirmed">예약확정</div></dd> -->
+                <dd><div class="res-status confirmed">예약확정</div></dd>
                 <!-- <dd><div class="res-status wait">예약대기</div></dd> -->
-                <dd><div class="res-status cancel">예약취소</div></dd>
+                <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
               </dl>
             </div>
             <dl>
@@ -76,15 +76,33 @@
               <dd>한국어</dd>
             </dl>
             <dl>
-              <dt>예약일시</dt>
+              <dt>행사일시</dt>
               <dd>2023년11월05월 (일) 14시 00분</dd>
             </dl>
             <dl>
-              <dt>예약인원</dt>
+              <dt>관람인원</dt>
               <dd>총 6명</dd>
             </dl>
           </div>
-          <a href="javascript:void(0)" class="res-cta lg cta-skyblue"><span>홈으로</span></a>
+          <a href="javascript:void(0)" class="res-cta lg cta-skyblue"><span>예약 상세 내역 보기</span></a>
+
+          <div class="guide-box">
+            <h3>예약상태 안내</h3>
+            <div class="list-inner">
+              <div class="flex align-items">
+                <div class="res-status confirmed">예약확정</div>
+                <div>최소 출발인원이 충족되어 행사가 확정 된 상태</div>
+              </div>
+              <div class="flex align-items">
+                <div class="res-status wait">예약대기</div>
+                <div>최소 출발인원 / 담당 해설사 미미정에 따른 담당자 확인 후 예약 확정 여부 확인 가능 상태</div>
+              </div>
+              <div class="flex align-items">
+                <div class="res-status cancel">예약취소</div>
+                <div>고객 요청 또는 행사 미진행에 따른 예약이 취소된 상태</div>
+              </div>
+            </div>
+          </div>
 
         </section>
     </main>

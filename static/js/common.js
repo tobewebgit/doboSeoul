@@ -2,6 +2,8 @@
   'use strict';
 
   function ReservationUi() {
+    this.langElement = $('.lang-element');
+    this.topButtonWrap = $('.top-button-wrap');
     this.popupWrap = $('#popupWrap');
     this.btnPopupClose = $('#btnPopupClose');
     this.innerPopup = $('#innerPopup');
@@ -19,7 +21,18 @@
   }
   
   ru.initEvent = function() {
+    this.langElement.on('click', '.btn_lang', this.resLangElementEvent);
+    this.topButtonWrap.on('click', 'button', this.resTopButtonEvent);
     this.innerPopup.on('keydown', this.trapTabKeyEvent);
+  }
+
+  ru.resLangElementEvent = function() {
+    RU.langElement.toggleClass('active');
+  }
+
+  ru.resTopButtonEvent = function() {
+    const idx = $(this).index();
+    idx === 1 ? RU.topButtonWrap.addClass('res-org') : RU.topButtonWrap.removeClass('res-org');
   }
   
   ru.popupWrapOpen = function(callback) {
