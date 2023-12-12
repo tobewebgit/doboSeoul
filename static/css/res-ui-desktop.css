@@ -1309,7 +1309,7 @@ a.disabled, button:disabled {
 }
 .calendar-wrap .prev-day .res-header span,
 .calendar-wrap .next-day .res-header span {
-  color: #c7c7c7;
+  color: #c7c7c7 !important;
 }
 .calendar-wrap .cell .res-list {
   display: flex;

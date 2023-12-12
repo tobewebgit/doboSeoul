@@ -1,7 +1,7 @@
 /* mobile */
 @media screen and (max-width: 768px) {
   .res-pc {
-    display: none;
+    display: none !important;
   }
   .res-mo {
     display: block;
@@ -272,7 +272,7 @@
   
   .top-button-wrap {
     max-width: 177.7778vw;
-    padding: 9.0278vw 6.3889vw 0;
+    padding: 9.0278vw 5.3889vw 0;
   }
   .top-button-wrap .button-box {
     height: 7.5000vw;
@@ -302,7 +302,7 @@
   .res-contents {
     display: block;
     max-width: 100%;
-    padding: 9.0278vw 6.3889vw 6.1111vw;
+    padding: 9.0278vw 5.3889vw 6.1111vw;
   }
   .res-contents + .res-contents {
     margin-top: 3.0556vw;
@@ -366,7 +366,7 @@
   }
   .res-contents .list-scroll-wrap {
     width: calc(100% + 1.3889vw);
-    height: 102.7778vw;
+    height: 42.7778vw;
   }
   .res-contents .list-scroll-wrap .item-list {
     padding-bottom: 4.8611vw;
@@ -374,7 +374,7 @@
   .res-contents .list-scroll-wrap .btn-left-item {
     margin-top: 3.4722vw;
     padding-right: 1.3889vw;
-    font-size: 3.3333vw;
+    font-size: 3vw;
   }
   .res-contents .form-container {
     display: block;
@@ -785,7 +785,7 @@
   
   .select-wrap {
     margin-right: 0.8333vw;
-    font-size: 2.5000vw;
+    font-size: 3.0000vw;
   }
   .select-wrap select {
     min-width: 13.7222vw;
@@ -820,45 +820,56 @@
     width: 100%;
     padding: 0;
     line-height: 4.8611vw;
-    font-size: 2.2222vw;
+    font-size: 3vw;
   }
   .calendar-wrap .cell + .cell {
     margin-top: 0.8333vw;
   }
   .calendar-wrap .cell > div {
-    height: 23.6111vw;
+    display: flex;
+    height: 10.6111vw;
     padding: 2.7778vw;
     border-radius: 1.6667vw;
   }
   .calendar-wrap .cell .res-header {
-    margin-bottom: 2.7778vw;
-    padding-bottom: 2.7778vw;
-    font-size: 1.9444vw;
-    border-bottom: 1px solid #D6D6D6;
+    justify-content: start;
+    font-size: 3vw;
   }
   .calendar-wrap .cell .res-header span:first-child {
     color: #191919;
+  }
+  .calendar-wrap .cell .res-header span:nth-child(2) {
+    display: inline-block;
+    margin-left: 3.3333vw;
   }
   .calendar-wrap .cell .res-header .res-mo {
     display: inline-block;
   }
   .calendar-wrap .cell .res-list {
     justify-content: left;
+    align-items: center;
     gap: 0.6944vw;
-    margin-top: 1.6667vw;
-    padding: 0 10.3889vw;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
   }
   .calendar-wrap .cell .res-list button,
   .calendar-wrap .cell .res-list span {
-    width: 22%;
-    padding: 0.1389vw;
-    font-size: 2.2222vw;
+    display: inline-block;
+    padding: 0;
+    font-size: 3vw;
+  }
+  .calendar-wrap .cell .res-list button + button,
+  .calendar-wrap .cell .res-list button + span,
+  .calendar-wrap .cell .res-list span + span,
+  .calendar-wrap .cell .res-list span + button {
+    margin-left: 2.2222vw;
   }
   .calendar-wrap .cell .res-list.max-8 span:nth-child(7)::after {
     display: none;
   }
   .calendar-wrap .cell .closed-days {
-    height: 13.8889vw;
+    height: auto;
   }
   
   
