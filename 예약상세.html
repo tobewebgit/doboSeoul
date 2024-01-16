@@ -20,18 +20,6 @@
         </h1>
         <div class="top-right">
           <a href="#" class="btn-check-cancel">예약확인 및 취소</a>
-          <div class="lang-element">
-            <button type="button" class="btn_lang" title="사이트 언어 선택 메뉴 열기"><span class="lang-text">한국어</span></button>
-            <ul class="lang-open-lst">
-              <li><a href="https://korean.visitseoul.net">한국어</a></li>
-              <li><a href="https://english.visitseoul.net">English</a></li>
-              <li><a href="https://japanese.visitseoul.net">日本語</a></li>
-              <li><a href="https://chinese.visitseoul.net">简体中文</a></li>
-              <li><a href="https://tchinese.visitseoul.net">繁體中文</a></li>
-              <li><a href="https://russian.visitseoul.net">русскийязык&nbsp;<span>beta</span></a></li>
-              <li><a href="https://malay.visitseoul.net">Malay&nbsp;<span>beta</span></a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </header>
@@ -51,22 +39,27 @@
 
 
           <div class="res-info-wrap">
-            <dl>
-              <dt>예약구분</dt>
-              <dd>단체</dd>
-            </dl>
             <div class="col2">
+              <dl>
+                <dt>예약구분</dt>
+                <dd>단체</dd>
+              </dl>
               <dl>
                 <dt>예약번호</dt>
                 <dd>2233020234</dd>
               </dl>
-              <dl>
-                <dt>예약상태</dt>
-                <dd><div class="res-status confirmed">예약확정</div></dd>
-                <!-- <dd><div class="res-status wait">예약대기</div></dd> -->
-                <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
-              </dl>
             </div>
+            <dl>
+              <dt>예약상태</dt>
+              <!-- <dd><div class="res-status confirmed">예약확정</div></dd> -->
+              <dd class="res-status-wrap">
+                <span class="res-status red">예약대기</span>
+                <span class="res-status-txt">
+                  관광일 2일전 17시 까지 3인 미만 모집 시 취소될 수 있습니다.
+                </span>
+              </dd>
+              <!-- <dd><div class="res-status cancel">예약취소</div></dd> -->
+            </dl>
             <dl>
               <dt>코스명</dt>
               <dd>[야간] 광화문 광장</dd>
@@ -203,7 +196,7 @@
                 </div>
               </dd>
 
-              <dt>안내사항</dt>
+              <dt>예약 후 안내사항</dt>
               <dd class="guide-table">
                 <div class="bg-box w-full">
                   <table>

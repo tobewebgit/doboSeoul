@@ -71,7 +71,8 @@
   /* 
    * input 
    */
-
+  .select-wrap span:nth-child(1),
+  .select-wrap label,
   .input-wrap label {
     font-size: 2.5000vw;
   }
@@ -82,7 +83,7 @@
     border-radius: 1.3889vw !important;
   }
   .input-wrap .type-1 input {
-    width: 35.6111vw;
+    width: 38.9999vw;
     margin: 0 0.8333vw 0 0;
   }
   .input-wrap .type-1 label.ess::before {
@@ -356,6 +357,45 @@
     padding: 3.6111vw;
     border-radius: 2.2222vw;
   }
+  .res-contents .left-content .left-inner .item-box {
+    visibility: hidden;
+    
+    top: 10.1563vw;
+    left: 0.5208vw;
+    right: 0.5208vw;
+    background: #fff;
+    transition: opacity .5s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .res-contents .left-content .left-inner .item-box.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+  }
+  .res-contents .left-content .left-inner .item-box dd {
+    width: 100%;
+    font-size: 2.0833vw;
+  }
+  .res-contents .left-content .left-inner .item-box label {
+    font-size: 2.0833vw;
+  }
+  .res-contents .left-content .left-inner .item-box .select-list {
+    margin-top: 2.6042vw;
+  }
+  .res-contents .left-content .left-inner .item-box .select-wrap {
+    margin-right: 0;
+  }
+  .res-contents .left-content .left-inner .item-box .select-wrap select {
+    background: #f5f6fa url(../images/arrow_1.gif) calc(100% - 1.8229vw) center no-repeat;
+  }
+  .res-contents .left-content .left-inner .item-box .select-wrap + .select-wrap {
+    margin-top: 1.5625vw;
+  }
+  .res-contents .left-content .btn-left-bottom {
+    margin-top: 2.6042vw;
+    width: 100%;
+  }
   .res-contents .left-content .top-wrap {
     margin-bottom: 2.0833vw;
     padding-bottom: 2.7778vw;
@@ -426,27 +466,92 @@
   .res-step-2 .res-info {
     margin-top: 3.0556vw;
   }
-  .res-step-2 .res-info .input-wrap,
-  .res-step-2 .res-info .select-wrap {
-    margin-bottom: 1.6667vw;
-  }
-  .res-step-2 .res-info .input-wrap label,
-  .res-step-2 .res-info .select-wrap label,
-  .res-step-2 .res-info .input-wrap .type-1 .space {
-    width: 25.0556vw;
-    padding-left: 2.2222vw;
-  }
-  .res-step-2 .res-info .input-wrap input,
-  .res-step-2 .res-info .input-wrap textarea,
-  .res-step-2 .res-info .select-wrap select {
-    width: 54.3056vw;
-  }
+
+
+
+
+
+
+
+.res-step-2 .res-info .input-wrap,
+.res-step-2 .res-info .select-wrap {
+  
+  margin-bottom: 1.5625vw;
+  margin-right: 0;
+}
+.res-step-2 .res-info .input-wrap .select-wrap {
+  width: 15.6250vw;
+  height: 5.2083vw;
+  margin: 0 1.3021vw 0 2.0833vw;
+}
+.res-step-2 .res-info .input-wrap .select-wrap + input {
+  width: 52.7344vw;
+}
+.res-step-2 .res-info .input-wrap .select-wrap .inner {
+  width: 100%;
+}
+.res-step-2 .res-info .input-wrap .select-wrap select {
+  width: 100%;
+}
+.res-step-2 .res-info .input-wrap .space,
+.res-step-2 .res-info .input-wrap label,
+.res-step-2 .res-info .select-wrap span:nth-child(1),
+.res-step-2 .res-info .select-wrap label,
+.res-step-2 .res-info .input-wrap .type-1 .space {
+  width: 16.9271vw;
+  padding-left: 2.0833vw;
+}
+.res-step-2 .res-info .input-wrap .type-5 {
+  width: 83%;
+}
+.res-step-2 .res-info .input-wrap .type-7 {
+  width: 80.5%;
+}
+.res-step-2 .res-info .input-wrap .type-7 input {
+  margin-right: 10px;
+}
+.res-step-2 .res-info .input-wrap .type-5 button,
+.res-step-2 .res-info .input-wrap .type-7 button {
+  min-width: 20.3333vw;
+}
+.res-step-2 .res-info .ess {
+  padding-left: 0 !important;
+}
+.res-step-2 .res-info .select-wrap span:nth-child(2) {
+  
+  padding-left: 1.5625vw;
+  font-size: 2.0833vw;
+  
+} 
+.res-step-2 .res-info .select-wrap span:nth-child(2),
+.res-step-2 .res-info .input-wrap input,
+.res-step-2 .res-info .input-wrap textarea,
+.res-step-2 .res-info .select-wrap select {
+  width: 69.6615vw;
+  font-size: 2.0833vw;
+}
+
+
+
+
+
+
+
+
+
+
   .res-step-2 .res-info .input-wrap textarea {
     height: 10.6944vw;
     padding: 1.6667vw;
   }
   .res-step-2 .res-info .input-wrap .type-1 input {
-    width: 30.0000vw;
+    width: 45.1146vw;
+    background: #fff;
+  }
+  .res-step-2 .res-info .input-wrap .type-2 input {
+    width: 28.4271vw;
+    margin-right: 1.3021vw;
+    background: #fff;
   }
   .res-step-2 .tit-box h2 {
     font-size: 4.1667vw;
@@ -551,6 +656,9 @@
   .res-step-2 .res-table .check-wrap {
     margin-top: 3.4722vw;
   }
+  .res-step-2 .res-table table .check-wrap label::before {
+    margin: 0 auto 1.3021vw;
+  }
   .res-step-2 .button-wrap {
     margin-top: 6.1111vw;
   }
@@ -577,7 +685,7 @@
     border-top: 0.1389vw solid #43c3f2;
   }
   .res-info-wrap dt {
-    width: 16.5833vw;
+    width: 17.5833vw;
   }
   .res-info-wrap .res-status-wrap .res-status {
     max-width: 13.3333vw;
@@ -756,6 +864,17 @@
     border-top: 0.2778vw solid #43c3f2;
     border-bottom: 0.2778vw solid #43c3f2;
   }
+  .res-confirm .form-wrap .type-3 .select-wrap .inner,
+  .res-confirm .form-wrap .type-3 .select-wrap select {
+    width: 100%;
+    height: 5.2083vw;
+    border-radius: 1.3021vw;
+    
+  }
+  .res-confirm .form-wrap .type-3 input {
+    width: 24.7396vw;
+    margin: 0 0.7813vw 0 0;
+  }
   .res-confirm .space {
     width: 16.4444vw;
     margin-right: 4.1667vw;
@@ -808,8 +927,14 @@
    */
   
   .calendar-head {
-    height: 10.6389vw;
+    display: block;
+    height: auto;
     font-size: 5.0000vw;
+  }
+  .calendar-head .cal-txt {
+    display: block;
+    margin: 2.3021vw 0;
+    font-size: 1.8229vw;
   }
   .calendar-head .btn-month {
     width: 4.4444vw;

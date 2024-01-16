@@ -322,6 +322,29 @@
     padding: 2.0313vw;
     border-radius: 1.25vw;
   }
+  .res-contents .left-content .left-inner .item-box {
+    top: 6.0938vw;
+    left: 0.3125vw;
+    right: 0.3125vw;
+  }
+  .res-contents .left-content .left-inner .item-box dd {
+    font-size: 1.2500vw;
+  }
+  .res-contents .left-content .left-inner .item-box label {
+    font-size: 1.2500vw;
+  }
+  .res-contents .left-content .left-inner .item-box .select-list {
+    margin-top: 1.5625vw;
+  }
+  .res-contents .left-content .left-inner .item-box .select-wrap select {
+    background: #f5f6fa url(../images/arrow_1.gif) calc(100% - 1.0938vw) center no-repeat;
+  }
+  .res-contents .left-content .left-inner .item-box .select-wrap + .select-wrap {
+    margin-top: 0.9375vw;
+  }
+  .res-contents .left-content .btn-left-bottom {
+    margin-top: 1.5625vw;
+  }
   .res-contents .left-content .top-wrap {
     margin-bottom: 1.1719vw;
     padding-bottom: 1.5625vw;
@@ -372,7 +395,7 @@
     padding-left: 1.1719vw;
   }
   .res-step-2 .select-list .select-wrap + .select-wrap {
-    margin-top: 0.9375vw;
+    margin-top: 1.8750vw;
   }
   .res-step-2 .select-list .select-wrap .inner {
     width: 9.6875vw;
@@ -383,27 +406,68 @@
   .res-step-2 .res-info {
     margin-top: 1.7188vw;
   }
+
+
+
   .res-step-2 .res-info .input-wrap,
   .res-step-2 .res-info .select-wrap {
     margin-bottom: 0.9375vw;
+    margin-right: 0;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap {
+    width: 9.3750vw;
+    height: 3.1250vw;
+    margin: 0 0.7813vw 0 1.2500vw;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap + input {
+    width: 31.6406vw;
   }
   .res-step-2 .res-info .input-wrap label,
+  .res-step-2 .res-info .select-wrap span:nth-child(1),
   .res-step-2 .res-info .select-wrap label,
   .res-step-2 .res-info .input-wrap .type-1 .space {
     width: 10.1563vw;
-    padding-left: 1.25vw;
+    padding-left: 1.2500vw;
   }
+  .res-step-2 .res-info .ess {
+    padding-left: 0 !important;
+  }
+  .res-step-2 .res-info .select-wrap span:nth-child(2) {
+    
+    padding-left: 0.9375vw;
+    font-size: 1.2500vw;
+    
+  } 
+  .res-step-2 .res-info .select-wrap span:nth-child(2),
+  .res-step-2 .res-info .input-wrap .type-7,
   .res-step-2 .res-info .input-wrap input,
   .res-step-2 .res-info .input-wrap textarea,
   .res-step-2 .res-info .select-wrap select {
     width: 41.7969vw;
+    font-size: 1.2500vw;
   }
+  .res-step-2 .res-info .input-wrap .type-7 input {
+    width: 27.8125vw;
+    margin-right: 0.7813vw;
+  }
+
+
+
+
+
+
   .res-step-2 .res-info .input-wrap textarea {
     height: 6.0156vw;
     padding: 0.9375vw;
   }
   .res-step-2 .res-info .input-wrap .type-1 input {
-    width: 28.125vw;
+    width: 27.9688vw;
+    background: #fff;
+  }
+  .res-step-2 .res-info .input-wrap .type-2 input {
+    width: 17.6563vw;
+    margin-right: 0.7813vw;
+    background: #fff;
   }
   .res-step-2 .tit-box h3 {
     margin-top: 1.5625vw;
@@ -485,6 +549,9 @@
   .res-step-2 .res-table .check-wrap {
     margin-top: 1.9531vw;
   }
+  .res-step-2 .res-table table .check-wrap label::before {
+    margin: 0 auto 0.7813vw;
+  }
   .res-step-2 .button-wrap {
     margin-top: 3.4375vw;
   }
@@ -511,7 +578,7 @@
     border-top: 0.0781vw solid #43c3f2;
   }
   .res-info-wrap dt {
-    width: 8.2031vw;
+    width: 10.1563vw;
   }
   .res-info-wrap .res-status-wrap .res-status {
     max-width: 7.5000vw;
@@ -674,6 +741,16 @@
     border-top: 0.1563vw solid #43c3f2;
     border-bottom: 0.1563vw solid #43c3f2;
   }
+  .res-confirm .form-wrap .type-3 .select-wrap .inner,
+  .res-confirm .form-wrap .type-3 .select-wrap select {
+    width: 100%;
+    height: 3.1250vw;
+    border-radius: 0.7813vw;
+  }
+  .res-confirm .form-wrap .type-3 input {
+    width: 14.8438vw;
+    margin: 0 0.4688vw 0 0;
+  }
   .res-confirm .space {
     width: 8.125vw;
     margin-right: 2.3438vw;
@@ -717,10 +794,14 @@
     height: 4.2969vw;
     font-size: 1.7188vw;
   }
+  .calendar-head .cal-txt {
+    margin-bottom: 0.7813vw;
+    font-size: 1.0938vw;
+  }
   .calendar-head .btn-month {
     width: 1.4844vw;
     height: 1.4844vw;
-    margin-top: 0.2344vw;
+    /* margin-top: 0.2344vw; */
   }
   .calendar-wrap .cell {
     width: calc(100% / 7);

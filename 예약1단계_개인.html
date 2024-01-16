@@ -20,18 +20,6 @@
         </h1>
         <div class="top-right">
           <a href="#" class="btn-check-cancel">예약확인 및 취소</a>
-          <div class="lang-element">
-            <button type="button" class="btn_lang" title="사이트 언어 선택 메뉴 열기"><span class="lang-text">한국어</span></button>
-            <ul class="lang-open-lst">
-              <li><a href="https://korean.visitseoul.net">한국어</a></li>
-              <li><a href="https://english.visitseoul.net">English</a></li>
-              <li><a href="https://japanese.visitseoul.net">日本語</a></li>
-              <li><a href="https://chinese.visitseoul.net">简体中文</a></li>
-              <li><a href="https://tchinese.visitseoul.net">繁體中文</a></li>
-              <li><a href="https://russian.visitseoul.net">русскийязык&nbsp;<span>beta</span></a></li>
-              <li><a href="https://malay.visitseoul.net">Malay&nbsp;<span>beta</span></a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </header>
@@ -51,7 +39,10 @@
           <button type="button" class="btn-res-o" class="">단체 예약</button>
         </div>
         <div class="text-wrap">
-          <p>경복궁, 창경궁, 창덕궁은 20인미만, 그 외 코스는 최대 10인 미만 시 개인예약에 해당됩니다.</p>
+          <p>
+            코스에 따라 최대 10인~20인 까지 예약 가능합니다.<br>
+            ※경복궁, 창경궁, 창덕궁은 20인까지 이며, 나머지 코스는 10인 까지 입니다.
+          </p>
           <p>예약인원이 최소 3명 이상일 경우 관광이 진행됩니다.<br>관광일 2일전 17시까지 예약인원이 3명 미만인 경우 자동취소 됩니다.</p>
         </div>
       </div>
@@ -65,18 +56,99 @@
             <div class="left-inner">
               <div class="top-wrap">
                 <div class="top-wrap-inner">
-                  <div class="select-wrap">
+                  <div class="input-wrap">
                     <label for="tourNum">관람인원</label>
+                    <input type="text" name="" value="0 명" id="tourNum">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 수정: 0115 -->
+              <div id="itemBox" class="item-box">
+                <dl class="flex justify-between">
+                  <dt class="reader-only">관람인원</dt>
+                  <dd>총 <span id="">0</span>명 선택</dd>
+                </dl>
+
+                <div class="select-list">
+                  <div class="select-wrap">
+                    <label for="personnelNum1">0세~6세</label>
                     <div class="inner">
-                      <select id="tourNum" name="">
+                      <select id="personnelNum1" name="">
                         <option value="">0 명</option>
-                        <option value="옵션 1">1 명</option>
+                        <option value="">1 명</option>
                       </select>
                     </div>
                   </div>
-                  <button type="button" class="res-cta cta-skyblue"><span>선택</span></button>
+                  <div class="select-wrap">
+                    <label for="personnelNum2">7세~12세</label>
+                    <div class="inner">
+                      <select id="personnelNum2" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum3">13세~19세</label>
+                    <div class="inner">
+                      <select id="personnelNum3" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum4">20세~29세</label>
+                    <div class="inner">
+                      <select id="personnelNum4" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum5">30세~39세</label>
+                    <div class="inner">
+                      <select id="personnelNum5" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum6">40세~49세</label>
+                    <div class="inner">
+                      <select id="personnelNum6" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum7">50세~59세</label>
+                    <div class="inner">
+                      <select id="personnelNum7" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <label for="personnelNum8">60세 이상</label>
+                    <div class="inner">
+                      <select id="personnelNum8" name="">
+                        <option value="">0 명</option>
+                        <option value="">1 명</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
+
+                <button type="button" id="visitorsSelectButton" class="btn-left-bottom res-cta cta-skyblue"><span>인원선택</span></button>
               </div>
+              <!-- // 수정: 0115 -->
+
               <div class="res-scroll list-scroll-wrap">
                 <div class="item-list">
                   <!-- 1208::선택 버튼 class "active" -->
@@ -107,6 +179,8 @@
                 </div>
               </div>
             </div>
+            
+            <button type="button" class="btn-left-bottom res-cta cta-skyblue"><span>조회</span></button>
           </div>
           <div class="right-content">
             <div class="top-tit">
@@ -119,12 +193,15 @@
             </div>
             <div id="calendar" aria-label="월별 달력">
               <div class="calendar-head" role="heading">
-                <span id="currentMonthYear">2023</span>년&nbsp;
-                <span id="currentMonthMonth">9</span>월 &nbsp;
+                <div class="cal-btn">
+                  <span id="currentMonthYear">2023</span>년&nbsp;
+                  <span id="currentMonthMonth">9</span>월 &nbsp;
 
-                <!-- 1208::a 일 경우 "disabled" class 추가, button 일 경우 disabled 속성 추가 -->
-                <button id="prevMonth" class="btn-month" aria-label="이전 달"><img src="./static/images/btn_cal_prev.png" class="img-full" alt=""></button>  &nbsp;
-                <button id="nextMonth" disabled class="btn-month" aria-label="다음 달"><img src="./static/images/btn_cal_next.png" class="img-full" alt=""></button>
+                  <!-- 1208::a 일 경우 "disabled" class 추가, button 일 경우 disabled 속성 추가 -->
+                  <button id="prevMonth" class="btn-month" aria-label="이전 달"><img src="./static/images/btn_cal_prev.png" class="img-full" alt=""></button>  &nbsp;
+                  <button id="nextMonth" disabled class="btn-month" aria-label="다음 달"><img src="./static/images/btn_cal_next.png" class="img-full" alt=""></button>
+                </div>
+                <div class="cal-txt">개인 예약의 경우 다음달 예약은 당월 15일 부터 가능 합니다.</div>
               </div>
 
               <div id="calendarWrap" class="calendar-wrap">

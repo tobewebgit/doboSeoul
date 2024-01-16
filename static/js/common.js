@@ -12,6 +12,9 @@
     this.focusableElements;
     this.firstTabStop;
     this.lastTabStop;
+    this.tourNum = $('#tourNum');
+    this.itemBox = $('#itemBox');
+    this.visitorsSelectButton = $('#visitorsSelectButton')
 
   }
   const ru = ReservationUi.prototype;
@@ -24,6 +27,16 @@
     this.langElement.on('click', '.btn_lang', this.resLangElementEvent);
     this.topButtonWrap.on('click', 'button', this.resTopButtonEvent);
     this.innerPopup.on('keydown', this.trapTabKeyEvent);
+    this.tourNum.on('click', this.tourNumEvent);
+    this.visitorsSelectButton.on('click', this.visitorsSelectEvent)
+  }
+
+  ru.tourNumEvent = function() {
+    RU.itemBox.addClass('active');
+  }
+
+  ru.visitorsSelectEvent = function() {
+    RU.itemBox.removeClass('active');
   }
 
   ru.resLangElementEvent = function() {
