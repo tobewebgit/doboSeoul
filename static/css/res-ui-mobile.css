@@ -1,5 +1,7 @@
 /* mobile */
 @media screen and (max-width: 768px) {
+  table caption{position: static; font-size:0; text-indent:-9999px;}
+
   .res-pc {
     display: none !important;
   }
@@ -467,78 +469,61 @@
     margin-top: 3.0556vw;
   }
 
-
-
-
-
-
-
-.res-step-2 .res-info .input-wrap,
-.res-step-2 .res-info .select-wrap {
-  
-  margin-bottom: 1.5625vw;
-  margin-right: 0;
-}
-.res-step-2 .res-info .input-wrap .select-wrap {
-  width: 15.6250vw;
-  height: 5.2083vw;
-  margin: 0 1.3021vw 0 2.0833vw;
-}
-.res-step-2 .res-info .input-wrap .select-wrap + input {
-  width: 52.7344vw;
-}
-.res-step-2 .res-info .input-wrap .select-wrap .inner {
-  width: 100%;
-}
-.res-step-2 .res-info .input-wrap .select-wrap select {
-  width: 100%;
-}
-.res-step-2 .res-info .input-wrap .space,
-.res-step-2 .res-info .input-wrap label,
-.res-step-2 .res-info .select-wrap span:nth-child(1),
-.res-step-2 .res-info .select-wrap label,
-.res-step-2 .res-info .input-wrap .type-1 .space {
-  width: 16.9271vw;
-  padding-left: 2.0833vw;
-}
-.res-step-2 .res-info .input-wrap .type-5 {
-  width: 83%;
-}
-.res-step-2 .res-info .input-wrap .type-7 {
-  width: 80.5%;
-}
-.res-step-2 .res-info .input-wrap .type-7 input {
-  margin-right: 10px;
-}
-.res-step-2 .res-info .input-wrap .type-5 button,
-.res-step-2 .res-info .input-wrap .type-7 button {
-  min-width: 20.3333vw;
-}
-.res-step-2 .res-info .ess {
-  padding-left: 0 !important;
-}
-.res-step-2 .res-info .select-wrap span:nth-child(2) {
-  
-  padding-left: 1.5625vw;
-  font-size: 2.0833vw;
-  
-} 
-.res-step-2 .res-info .select-wrap span:nth-child(2),
-.res-step-2 .res-info .input-wrap input,
-.res-step-2 .res-info .input-wrap textarea,
-.res-step-2 .res-info .select-wrap select {
-  width: 69.6615vw;
-  font-size: 2.0833vw;
-}
-
-
-
-
-
-
-
-
-
+  .res-step-2 .res-info .input-wrap,
+  .res-step-2 .res-info .select-wrap {
+    
+    margin-bottom: 1.5625vw;
+    margin-right: 0;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap {
+    width: 15.6250vw;
+    height: 5.2083vw;
+    margin: 0 1.3021vw 0 2.0833vw;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap + input {
+    width: 50vw;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap .inner {
+    width: 100%;
+  }
+  .res-step-2 .res-info .input-wrap .select-wrap select {
+    width: 100%;
+  }
+  .res-step-2 .res-info .input-wrap .space,
+  .res-step-2 .res-info .input-wrap label,
+  .res-step-2 .res-info .select-wrap span:nth-child(1),
+  .res-step-2 .res-info .select-wrap label,
+  .res-step-2 .res-info .input-wrap .type-1 .space {
+    width: 16.9271vw;
+    padding-left: 2.0833vw;
+  }
+  .res-step-2 .res-info .input-wrap .type-5 {
+    width: 83%;
+  }
+  .res-step-2 .res-info .input-wrap .type-7 {
+    width: 80.5%;
+  }
+  .res-step-2 .res-info .input-wrap .type-7 input {
+    margin-right: 5px;
+  }
+  .res-step-2 .res-info .input-wrap .type-5 button,
+  .res-step-2 .res-info .input-wrap .type-7 button {
+    min-width: 20.3333vw;
+  }
+  .res-step-2 .res-info .ess {
+    padding-left: 0 !important;
+  }
+  .res-step-2 .res-info .select-wrap span:nth-child(2) {
+    padding-left: 1.5625vw;
+    font-size: 2.0833vw;
+  } 
+  .res-step-2 .res-info .select-wrap span:nth-child(2),
+  .res-step-2 .res-info .input-wrap input,
+  .res-step-2 .res-info .input-wrap textarea,
+  .res-step-2 .res-info .select-wrap select {
+    width: 69.6615vw;
+    font-size: 2.0833vw;
+  }
 
   .res-step-2 .res-info .input-wrap textarea {
     height: 10.6944vw;
@@ -641,7 +626,8 @@
     margin: 1.8056vw 0 0 0.6944vw;
   }
   .res-step-2 .res-table {
-    padding: 5.8333vw;
+    width: 100%;
+    padding: 4.1667vw;
   }
   .res-step-2 .res-table table {
     font-size: 2.2222vw;
@@ -649,9 +635,16 @@
   }
   .res-step-2 .res-table th,
   .res-step-2 .res-table td {
-    padding: 2.2222vw 4.1667vw;
+    padding: 2.2222vw 3.1667vw;
     border-top: 0.1389vw solid #00a1dd;
     border-left: 0.1389vw solid #00a1dd;
+  }
+  .res-step-2 .res-table tr:first-child th,
+  .res-step-2 .res-table tr:first-child td{
+    border-top: 0;
+  }
+  .res-step-2 .res-table th {
+    /* width: 100px; */
   }
   .res-step-2 .res-table .check-wrap {
     margin-top: 3.4722vw;
@@ -796,7 +789,7 @@
   }
   .res-detail .guide-table th,
   .res-detail .guide-table td {
-    padding: 2.2222vw 4.1667vw;
+    padding: 2.2222vw 3.1667vw;
     border-top: 0.1389vw solid #e8e5e5;
     border-left: 0.1389vw solid #e8e5e5;
   }

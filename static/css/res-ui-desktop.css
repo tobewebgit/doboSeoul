@@ -489,6 +489,10 @@ a.disabled, button:disabled {
   background: url('../images/bg_tab_1.png') 0 0 no-repeat;
   background-size: 491px auto;
 }
+.top-button-wrap .button-box.res-step-2 {
+  background: url('../images/bg_tab_3.png') 0 0 no-repeat;
+  background-size: 491px auto;
+}
 .top-button-wrap .button-box::after {
   content: '';
   position: absolute;
@@ -506,6 +510,13 @@ a.disabled, button:disabled {
   width: 230px;
   color: #fff;
   font-size: 20px;
+  font-weight: 700;
+}
+.top-button-wrap .button-box .btn-res-h {
+  width: 230px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
   font-weight: 700;
 }
 .top-button-wrap .button-box button span {
@@ -689,7 +700,7 @@ a.disabled, button:disabled {
 }
 .res-contents .list-scroll-wrap {
   width: calc(100% + 10px);
-  height: 740px;
+  height: 662px;
   overflow-y: auto;
 }
 .res-contents .list-scroll-wrap .item-list {
@@ -934,11 +945,13 @@ a.disabled, button:disabled {
   padding: 42px;
 }
 .res-step-2 .res-table table {
-  font-size: 16px;
+  display: block;
   width: 100%;
+  font-size: 16px;
   border-collapse: collapse;
   border: 1px solid #00a1dd;
   border-top: 0;
+  overflow: hidden;
 }
 .res-step-2 .res-table th,
 .res-step-2 .res-table td {
@@ -964,6 +977,9 @@ a.disabled, button:disabled {
 .res-step-2 .res-table table .check-wrap {
   text-align: center;
   margin-top: 0;
+}
+.res-step-2 .res-table table .check-wrap label {
+  white-space:nowrap;
 }
 .res-step-2 .res-table table .check-wrap label::before {
   display: block;
