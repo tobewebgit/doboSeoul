@@ -280,11 +280,12 @@
   .top-button-wrap .button-box {
     height: 7.5000vw;
     line-height: 6.6444vw;
-    background-size: 68.1944vw auto;
+    background-size: 68.1944vw auto !important;
   }
   .top-button-wrap.res-org .button-box {
     background-size: 68.1944vw auto;
   }
+  .top-button-wrap .button-box .btn-res-h,
   .top-button-wrap .button-box button {
     width: 31.9444vw;
     font-size: 2.7778vw;
